@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Produtos Eletrônicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Produtos Eletrônicos</h1>
+    </header>
+
+    <main>
+        
+        <section id="products">
+            <article class="product">
+                <img src="produto1.jpg" alt="Produto 1">
+                <h2>Produto 1</h2>
+                <p>Descrição do Produto 1</p>
+                <p>Preço: R$ 999,99</p>
+                <button onclick="adicionarAoCarrinho('Produto 1', 999.99)">Adicionar ao Carrinho</button>
+            </article>
+
+            <article class="product">
+                <img src="produto2.jpg" alt="Produto 2">
+                <h2>Produto 2</h2>
+                <p>Descrição do Produto 2</p>
+                <p>Preço: R$ 1499,99</p>
+                <button onclick="adicionarAoCarrinho('Produto 2', 1499.99)">Adicionar ao Carrinho</button>
+            </article>
+
+            <!-- Mais produtos podem ser adicionados aqui -->
+        </section>
+
+        <aside id="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+            </ul>
+            <p id="total">Total: R$ 0,00</p>
+            <button onclick="finalizarCompra()">Finalizar Compra</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
